@@ -1,7 +1,9 @@
+import './styles.css';
+
 function Home() {
   return (
-    <div className="App">
-      <h1>Testando</h1>
+    <div className="Home">
+        <h2>Testando pagina Home</h2> 
     </div>
   );
 }
