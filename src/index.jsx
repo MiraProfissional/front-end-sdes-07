@@ -6,6 +6,7 @@ import Products from './templates/Products';
 import Navbar from './components/Navbar';
 import NotFound from './templates/NotFound';
 import Login from './templates/Login';
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

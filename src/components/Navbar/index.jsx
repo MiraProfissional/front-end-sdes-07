@@ -4,12 +4,12 @@ import './styles.css'
 
 function Navbar() {
     return (
-        <nav className='Navbar'>
+        <nav className='navbar'>
             <div>
-                <img src={imagem} alt="logo-trakmaq" />
-            </div>
-            <div>
-                <ul className='lista-paginas'>
+                <Link to="/">
+                    <img src={imagem} alt="logo-trakmaq" /> 
+                </Link>
+                <ul className='lista-nav'>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
