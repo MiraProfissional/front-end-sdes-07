@@ -18,7 +18,7 @@ function Navbar() {
                     <Link to="/"><CiHome/> Home</Link>
                 </li>
                 <li>
-                    <Link to="/"><CiShop/> Sobre Nós </Link>
+                    <Link to="/"><CiShop/> Sobre Nós</Link>
                 </li>
                 <li>
                     <Link to="/"><CiPhone/> Contato</Link>
