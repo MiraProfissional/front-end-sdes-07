@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import imagem from '../../images/logo-claro-trakmaq.png'
+import logoTrakmaq from '../../utilities/images/logo-claro-trakmaq.png'
 import './styles.css'
 import { CiHome, CiUser, CiShop, CiPhone, CiShoppingBasket } from "react-icons/ci";
 
@@ -9,7 +9,7 @@ function Navbar() {
         <nav className='navbar'>
             <div className='div-img'>
             <Link to="/">
-                <img src={imagem} alt="logo-trakmaq" /> 
+                <img src={logoTrakmaq} alt="logo-trakmaq" /> 
             </Link> 
             </div>
                 

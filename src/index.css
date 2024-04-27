@@ -15,4 +15,36 @@ body,
 a {
     text-decoration: none;
     color: inherit; 
-  }
+}
+
+.main-title-white {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    border-bottom: 5px solid #efb007;
+}
+
+.main-title-black {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    border-bottom: 5px solid #efb007;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    background-color: #efb007;
+    cursor: pointer;
+}
