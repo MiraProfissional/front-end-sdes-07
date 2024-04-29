@@ -15,7 +15,7 @@ function Carrousel() {
     const imagesCarrousel = [
         {id: 1, src: "https://en.lbxco.com/wp-content/uploads/2022/04/Link-Belt-355-X4S-Introduced.jpg", alt: "link-belt-excavator"},
         {id: 2, src: "https://www.baumaschinen-mueller.de/sites/default/files/2020-07/Wacker_Neuson_ET18_472h_04.JPG", alt: "wacker-neuson"},
-        {id: 3, src: imageRetroEscavadeira, alt: "video-tractor"},
+        {id: 3, src: imageRetroEscavadeira, alt: "retro-escavadeira"},
     ];
 
     useEffect(() => {
@@ -33,9 +33,8 @@ function Carrousel() {
             <Swiper
                 slidesPerView={1}
                 pagination={true}
-                autoplay={{ delay: 2000 }}
+                autoplay={{ delay: 4000 }}
                 loop={true}
-                className='slide-animation'
                 >
                     {imagesCarrousel.map((image) => (
                         <SwiperSlide key={image.id}>

@@ -23,6 +23,7 @@ a {
     font-weight: bold;
     padding: 0 0 5px 0;
     border-bottom: 5px solid #efb007;
+    margin: 20px;
 }
 
 .main-title-black {
@@ -31,6 +32,7 @@ a {
     font-weight: bold;
     padding: 0 0 5px 0;
     border-bottom: 5px solid #efb007;
+    margin: 20px;
 }
 
 .btn {
