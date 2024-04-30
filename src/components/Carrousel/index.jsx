@@ -1,14 +1,10 @@
 import './styles.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { register } from 'swiper/element/bundle'
+import 'swiper/css';
 import imageRetroEscavadeira from '../../utilities/images/retro-escavadeira.jpg'
-
-
+import { useEffect } from 'react';
 
 function Carrousel() {
 
@@ -18,8 +14,8 @@ function Carrousel() {
         {id: 3, src: imageRetroEscavadeira, alt: "retro-escavadeira"},
     ];
 
-    useEffect(() => {
-        register()
+    useEffect (()=> {
+        register();
     },[])
 
     return (
