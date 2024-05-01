@@ -1,0 +1,19 @@
+.orcamento-chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-chamada h3 {
+    width: 27%;
+}
+
+.orcamento-chamada p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.orcamento-chamada button {
+    width: 30%;
+}
