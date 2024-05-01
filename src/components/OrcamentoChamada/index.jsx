@@ -9,7 +9,7 @@ export function OrcamentoChamada () {
         bgImage={image}
         bgImageAlt="the dog"
         strength={-400}
-        style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        style={{ height: '50vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
         bgImageStyle={{
             opacity: 0.3,
             objectFit: 'cover', // Para garantir que a imagem cubra todo o espaço disponível
