@@ -1,0 +1,38 @@
+.container-contatenos h3{
+    width: 10.5%;
+}
+
+.container-informacoes {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.informacoes-contato {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.formulario-contato {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.formulario-contato form {
+    width: 50%;
+    background-color: #efb007;
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.border {
+    height: 80vh;
+    width: 20px;
+    background-color: #000;
+}

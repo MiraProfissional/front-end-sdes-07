@@ -1,4 +1,5 @@
 import Carrousel from '../../components/Carrousel';
+import Contatenos from '../../components/Contatenos';
 import OrcamentoChamada from '../../components/OrcamentoChamada';
 import SobreNos from '../../components/SobreNos';
 import './styles.css';
@@ -9,6 +10,7 @@ function Home() {
         <Carrousel/> 
         <SobreNos/>
         <OrcamentoChamada/>
+        <Contatenos/>
     </div>
   );
 }
