@@ -1,10 +1,17 @@
+.container-contatenos {
+    margin-top: 20px;
+}
+
 .container-contatenos h3{
     width: 10.5%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .container-informacoes {
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
     font-size: 20px;
 }
 
@@ -14,15 +21,21 @@
     padding: 20px;
 }
 
+.informacoes-contato ul {
+    list-style: none;
+}
+
 .formulario-contato {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 20px;
 }
 
 .formulario-contato form {
     width: 50%;
+    height: 90%;
     background-color: #efb007;
     border: 1px solid black;
     border-radius: 5%;
@@ -31,8 +44,22 @@
     flex-direction: column;
 }
 
+.formulario-contato form input{
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 20px;
+}
+
+#mensagem {
+    height: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .border {
     height: 80vh;
-    width: 20px;
+    width: 15px;
     background-color: #000;
 }
