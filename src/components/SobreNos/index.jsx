@@ -5,10 +5,10 @@ export function SobreNos () {
     return (
         <div className='sobre-nos-container'>
             <div className='sobre-nos-img'>
-                <img src={imagem} className='background-img' alt="background-image" />
+                <img src={imagem} className='background-img' alt="yellow-background" />
                 <img src="https://th.bing.com/th/id/OIP.KPwLL2a-vw67al0B_rGMQAHaE7?rs=1&pid=ImgDetMain" 
                 className='team-img'
-                alt="team-img" />
+                alt="team-trakamaq" />
             </div>
             <div className='sobre-nos-text'>
                 <h3 className='main-title-white'>Sobre nós</h3>
