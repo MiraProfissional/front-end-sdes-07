@@ -28,7 +28,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="main-title-white">Páginas</h4>
-            <ul className='lista-com-hover'>
+            <ul className="lista-com-hover">
               <li>
                 <Link to="/">
                   <CiHome /> Home
@@ -80,7 +80,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="main-title-white">Redes Sociais</h4>
-            <ul className='lista-com-hover'>
+            <ul className="lista-com-hover">
               <li>
                 <a
                   href="https://pt-br.facebook.com/trakmaq/"
