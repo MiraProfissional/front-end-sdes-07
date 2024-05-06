@@ -28,7 +28,7 @@
     padding: 5px;
 }
 
-.container-footer-conteudo div:nth-child(2) li:hover , div:nth-child(4) li:hover{
+.lista-com-hover li:hover{
     color: #efb007;
 }
 
