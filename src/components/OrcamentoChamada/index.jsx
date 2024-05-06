@@ -7,7 +7,7 @@ export function OrcamentoChamada() {
     <Parallax
       blur={{ min: -15, max: 15 }}
       bgImage={image}
-      bgImageAlt="the dog"
+      bgImageAlt="trator-jcb"
       strength={-400}
       style={{
         height: '50vh',
