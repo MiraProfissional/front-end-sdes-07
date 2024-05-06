@@ -5,7 +5,7 @@ import './styles.css'
 export function Contatenos() {
     return (
         <div className='container-contatenos'>
-            <h3 className='main-title-black'>Contatenos</h3>
+            <h3 className='main-title-black'>Contate-nos</h3>
             <div className='container-informacoes'>
                 <div className='informacoes-contato'>
                     <ul>

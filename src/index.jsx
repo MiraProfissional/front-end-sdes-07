@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import NotFound from './templates/NotFound';
 import Login from './templates/Login';
 import './index.css'
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path='/login' element={<Login/>} />
         <Route path='*' element={<NotFound/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   </React.StrictMode>
 );
