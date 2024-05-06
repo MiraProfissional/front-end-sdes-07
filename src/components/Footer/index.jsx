@@ -57,7 +57,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="div-contato-footer">
-            <h4 className="main-title-white">Contato</h4>
+            <h4 className="main-title-white">Contatos</h4>
             <ul>
               <li>
                 <CiPhone /> (12) 3942-3300
