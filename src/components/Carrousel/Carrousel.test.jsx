@@ -1,5 +1,3 @@
-describe ('<Carrousel />', () => {
-    it('should testing', () => {
-        
-    })
-})
+describe('<Carrousel />', () => {
+  it('should testing', () => {});
+});

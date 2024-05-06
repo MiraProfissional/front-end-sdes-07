@@ -1,5 +1,3 @@
 describe('<Products />', () => {
-    it('should render', () => {
-      
-    })
-  })
+  it('should render', () => {});
+});

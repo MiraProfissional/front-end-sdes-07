@@ -1,5 +1,3 @@
 describe('<NotFound />', () => {
-    it('should render', () => {
-      
-    })
-  })
+  it('should render', () => {});
+});

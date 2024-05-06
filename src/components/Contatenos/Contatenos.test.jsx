@@ -1,5 +1,3 @@
 describe('<Contatenos />', () => {
-    it('should render', () => {
-        
-    })
-})
+  it('should render', () => {});
+});

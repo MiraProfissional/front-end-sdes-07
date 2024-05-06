@@ -15,7 +15,7 @@
 //     //         <Navbar />
 //     //       </MemoryRouter>
 //     //     );
-    
+
 //     //     expect(screen.getByText('Home')).toBeInTheDocument();
 //     //     expect(screen.getByText('Sobre Nós')).toBeInTheDocument();
 //     //     expect(screen.getByText('Contato')).toBeInTheDocument();
@@ -34,7 +34,7 @@
 //       //       </Routes>
 //       //     </MemoryRouter>
 //       //   );
-      
+
 //       //   fireEvent.click(screen.getByText('Home'));
 //       //   expect(screen.getByText('Trakmaq, sua solução!')).toBeInTheDocument();
 
@@ -63,11 +63,9 @@
 //       //   expect(screen.getByText('Testando pagina Home')).toBeInTheDocument();
 
 //       // });
-      
+
 // })
 
-describe ('Teste', () => {
-  it('should render', () => {
-
-  })
-})
+describe('Teste', () => {
+  it('should render', () => {});
+});

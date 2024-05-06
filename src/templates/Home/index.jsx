@@ -7,10 +7,10 @@ import './styles.css';
 function Home() {
   return (
     <div className="Home">
-        <Carrousel/> 
-        <SobreNos/>
-        <OrcamentoChamada/>
-        <Contatenos/>
+      <Carrousel />
+      <SobreNos />
+      <OrcamentoChamada />
+      <Contatenos />
     </div>
   );
 }

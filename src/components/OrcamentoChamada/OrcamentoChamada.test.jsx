@@ -1,7 +1,5 @@
-import OrcamentoChamada from ".";
+import OrcamentoChamada from '.';
 
 describe('<OrcamentoChamada />', () => {
-    it('should render', () => {
-        
-    })
-})
+  it('should render', () => {});
+});

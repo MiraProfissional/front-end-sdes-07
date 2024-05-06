@@ -1,5 +1,3 @@
 describe('<Home />', () => {
-  it('should render', () => {
-    
-  })
-})
+  it('should render', () => {});
+});

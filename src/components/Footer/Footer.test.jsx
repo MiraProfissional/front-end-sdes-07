@@ -1,5 +1,3 @@
 describe('<Footer />', () => {
-    it('should render', () => {
-        
-    })
-})
+  it('should render', () => {});
+});
