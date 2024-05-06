@@ -42,15 +42,15 @@ export function Footer () {
                         <li><CiMobile4 /> (12) 99783-3901</li>
                         <li><CiMail /> vendas@traqmak.com.br</li>
                         <li><CiLocationOn /> Rua Araguaia, 70 - Vila São Bento São José dos Campos - São Paulo</li>
-                        <li><CiClock2 /> Segunda à Sexta-Feira das 8:30h as 17:30hSábado das 8:30h às 12h</li>
+                        <li><CiClock2 /> Segunda à Sexta-Feira das 8:30h as 17:30h Sábado das 8:30h às 12h</li>
                     </ul>
             </div>
             <div>
                 <h4 className='main-title-white'>Redes Sociais</h4>
                 <ul>
-                    <li><a href="https://pt-br.facebook.com/trakmaq/" target='_blank'><CiFacebook /> Facebook</a></li>
-                    <li><a href="https://www.instagram.com/trakmaq/" target='_blank'><CiInstagram /> Instagram</a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=5512997833901" target='_blank'><FaWhatsapp /> Whatsapp</a></li>
+                    <li><a href="https://pt-br.facebook.com/trakmaq/" target='_blank' rel='noopener noreferrer'><CiFacebook /> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/trakmaq/" target='_blank' rel='noopener noreferrer'><CiInstagram /> Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5512997833901" target='_blank' rel='noopener noreferrer'><FaWhatsapp /> Whatsapp</a></li>
                 </ul>
             </div>
         </div>
