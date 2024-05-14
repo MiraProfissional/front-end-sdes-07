@@ -6,6 +6,7 @@ import {
   CiClock2,
 } from 'react-icons/ci';
 import './styles.css';
+import FormularioContato from '../FormularioContato';
 
 export function Contatenos() {
   return (
@@ -45,38 +46,7 @@ export function Contatenos() {
         </div>
         <div className="border"></div>
         <div className="formulario-contato">
-          <form action="">
-            <label htmlFor="nome">Nome</label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Digite seu nome aqui"
-            />
-
-            <label htmlFor="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Digite seu email aqui"
-            />
-
-            <label htmlFor="assunto">Assunto</label>
-            <input
-              type="text"
-              id="assunto"
-              name="assunto"
-              placeholder="Digite o assunto aqui"
-            />
-
-            <label htmlFor="mensagem">Mensagem</label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              placeholder="Digite sua mensagem aqui"
-            ></textarea>
-          </form>
+          <FormularioContato />
         </div>
       </div>
     </div>
