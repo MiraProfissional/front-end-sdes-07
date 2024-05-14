@@ -1,4 +1,4 @@
-![CI](https://github.com/MiraProfissional/front-end-sdes-07/actions/workflows/node.js.yml/badge.svg)
+[![CI](https://github.com/MiraProfissional/front-end-sdes-07/actions/workflows/node.js.yml/badge.svg)](https://github.com/MiraProfissional/front-end-sdes-07/actions/workflows/node.js.yml)
 
 # Getting Started with Create React App
 
