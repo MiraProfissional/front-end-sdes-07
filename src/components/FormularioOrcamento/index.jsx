@@ -13,7 +13,7 @@ export function FormularioOrcamento() {
       .email('Email inválido')
       .required('O campo Email é obrigatório'),
     telefone: yup.number(),
-    observacao: yup.string()
+    observacao: yup.string(),
   });
 
   const [mensagemErro, setMensagemErro] = useState(' ');
@@ -36,7 +36,11 @@ export function FormularioOrcamento() {
 
   return (
     <>
-      <form className="form-orcamento" onSubmit={handleSubmit(submit)} noValidate>
+      <form
+        className="form-orcamento"
+        onSubmit={handleSubmit(submit)}
+        noValidate
+      >
         <label htmlFor="codigoPeca" placeholder="Código da peça">
           Código da peça
         </label>
@@ -66,7 +70,7 @@ export function FormularioOrcamento() {
         <input type="textarea" id="observacao" {...register('observacao')} />
         <p className="erro">{errors.observacao?.message}</p>
 
-        <button>Entrar</button>
+        <button>Enviar</button>
       </form>
       <p className="server-response">{mensagemErro}</p>
     </>

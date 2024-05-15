@@ -1,5 +1,3 @@
 describe('<FormularioOrcamento />', () => {
-    it('should render', () => {
-        
-    })
-})
+  it('should render', () => {});
+});

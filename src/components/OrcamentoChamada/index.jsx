@@ -1,8 +1,17 @@
 import './styles.css';
 import image from '../../utilities/images/jcb.jpg';
 import { Parallax } from 'react-parallax';
+import PopUp from '../PopUp';
+import FormularioOrcamento from '../FormularioOrcamento';
+import { useState } from 'react';
 
 export function OrcamentoChamada() {
+  const [buttonPopUp, setButtonPopUp] = useState(false);
+
+  const handleButtonOrcamento = () => {
+    setButtonPopUp(true);
+  };
+
   return (
     <Parallax
       blur={{ min: -15, max: 15 }}
@@ -26,8 +35,13 @@ export function OrcamentoChamada() {
           Não está achando a peça que precisa em nenhum lugar? Nós podemos te
           ajudar!
         </p>
-        <button className="btn">Fazer orçamento!</button>
+        <button className="btn" onClick={handleButtonOrcamento}>
+          Fazer orçamento!
+        </button>
       </div>
+      <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}>
+        <FormularioOrcamento />
+      </PopUp>
     </Parallax>
   );
 }
