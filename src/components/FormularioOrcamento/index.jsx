@@ -4,15 +4,16 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useState } from 'react';
 
-export function FormularioContato() {
+export function FormularioOrcamento() {
   const schema = yup.object({
+    codigoPeca: yup.number().required('o campo Codigo da Peça é obrigatório'),
     nome: yup.string().required('o campo Nome é obrigatório'),
     email: yup
       .string()
       .email('Email inválido')
       .required('O campo Email é obrigatório'),
-    assunto: yup.string().required('O campo Assunto é obrigatório'),
-    mensagem: yup.string().required('O campo Mensagem é obrigatório'),
+    telefone: yup.number(),
+    observacao: yup.string()
   });
 
   const [mensagemErro, setMensagemErro] = useState(' ');
@@ -35,7 +36,12 @@ export function FormularioContato() {
 
   return (
     <>
-      <form className="form-contato" onSubmit={handleSubmit(submit)} noValidate>
+      <form className="form-orcamento" onSubmit={handleSubmit(submit)} noValidate>
+        <label htmlFor="codigoPeca" placeholder="Código da peça">
+          Código da peça
+        </label>
+        <input type="text" id="codigoPeca" {...register('codigoPeca')} />
+        <p className="erro">{errors.codigoPeca?.message}</p>
         <label htmlFor="nome" placeholder="nome">
           Nome
         </label>
@@ -48,17 +54,17 @@ export function FormularioContato() {
         <input type="text" id="email" {...register('email')} />
         <p className="erro">{errors.email?.message}</p>
 
-        <label htmlFor="assunto" placeholder="assunto">
-          Assunto
+        <label htmlFor="telefone" placeholder="telefone">
+          Telefone
         </label>
-        <input type="text" id="assunto" {...register('assunto')} />
-        <p className="erro">{errors.assunto?.message}</p>
+        <input type="text" id="telefone" {...register('telefone')} />
+        <p className="erro">{errors.telefone?.message}</p>
 
-        <label htmlFor="mensagem" placeholder="mensagem">
-          Mensagem
+        <label htmlFor="observacao" placeholder="observacao">
+          Observação
         </label>
-        <input type="textarea" id="mensagem" {...register('mensagem')} />
-        <p className="erro">{errors.mensagem?.message}</p>
+        <input type="textarea" id="observacao" {...register('observacao')} />
+        <p className="erro">{errors.observacao?.message}</p>
 
         <button>Entrar</button>
       </form>
@@ -67,4 +73,4 @@ export function FormularioContato() {
   );
 }
 
-export default FormularioContato;
+export default FormularioOrcamento;
