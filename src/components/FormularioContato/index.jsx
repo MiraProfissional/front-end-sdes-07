@@ -6,11 +6,16 @@ import { useState } from 'react';
 
 export function FormularioContato() {
   const schema = yup.object({
-    nome: yup.string().required('o campo Nome é obrigatório'),
+    nome: yup.string().required('O campo Nome é obrigatório'),
     email: yup
       .string()
       .email('Email inválido')
       .required('O campo Email é obrigatório'),
+    telefone: yup
+      .string()
+      .matches(/^\d*$/, 'Telefone deve conter apenas números')
+      .transform((value) => (value ? Number(value) : null))
+      .nullable(),
     assunto: yup.string().required('O campo Assunto é obrigatório'),
     mensagem: yup.string().required('O campo Mensagem é obrigatório'),
   });
@@ -37,30 +42,36 @@ export function FormularioContato() {
     <>
       <form className="form-contato" onSubmit={handleSubmit(submit)} noValidate>
         <label htmlFor="nome" placeholder="nome">
-          Nome
+          Nome:
         </label>
         <input type="text" id="nome" {...register('nome')} />
         <p className="erro">{errors.nome?.message}</p>
 
         <label htmlFor="email" placeholder="email">
-          Email
+          Email:
         </label>
         <input type="text" id="email" {...register('email')} />
         <p className="erro">{errors.email?.message}</p>
 
+        <label htmlFor="telefone" placeholder="telefone">
+          Telefone:
+        </label>
+        <input type="text" id="telefone" {...register('telefone')} />
+        <p className="erro">{errors.telefone?.message}</p>
+
         <label htmlFor="assunto" placeholder="assunto">
-          Assunto
+          Assunto:
         </label>
         <input type="text" id="assunto" {...register('assunto')} />
         <p className="erro">{errors.assunto?.message}</p>
 
         <label htmlFor="mensagem" placeholder="mensagem">
-          Mensagem
+          Mensagem:
         </label>
-        <input type="textarea" id="mensagem" {...register('mensagem')} />
+        <textarea id="mensagem" {...register('mensagem')} />
         <p className="erro">{errors.mensagem?.message}</p>
 
-        <button>Entrar</button>
+        <button className="btn">Enviar</button>
       </form>
       <p className="server-response">{mensagemErro}</p>
     </>

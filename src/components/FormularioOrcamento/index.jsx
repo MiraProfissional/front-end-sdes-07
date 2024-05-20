@@ -12,11 +12,13 @@ export function FormularioOrcamento() {
       .string()
       .email('Email inválido')
       .required('O campo Email é obrigatório'),
-    telefone: yup.number(),
+    telefone: yup
+      .string()
+      .matches(/^\d*$/, 'Telefone deve conter apenas números')
+      .transform((value) => (value ? Number(value) : null))
+      .nullable(),
     observacao: yup.string(),
   });
-
-  const [mensagemErro, setMensagemErro] = useState(' ');
 
   const form = useForm({
     resolver: yupResolver(schema),
@@ -29,10 +31,6 @@ export function FormularioOrcamento() {
   const submit = () => {
     return;
   };
-
-  if (mensagemErro.toLowerCase().includes('autenticado')) {
-    return;
-  }
 
   return (
     <>
@@ -72,7 +70,6 @@ export function FormularioOrcamento() {
 
         <button>Enviar</button>
       </form>
-      <p className="server-response">{mensagemErro}</p>
     </>
   );
 }

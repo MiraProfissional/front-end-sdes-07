@@ -30,32 +30,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 20px;
-}
-
-.formulario-contato form {
-    width: 50%;
-    height: 90%;
-    background-color: #efb007;
-    border: 1px solid black;
-    border-radius: 5%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario-contato form input{
-    margin: 10px 0px;
-    padding: 10px;
-    border-radius: 10px;
-    height: 20px;
-}
-
-#mensagem {
-    height: 100%;
-    margin: 10px 0px;
-    padding: 10px;
-    border-radius: 10px;
+    margin: 10px 20px;
 }
 
 .border {

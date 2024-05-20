@@ -1,4 +1,38 @@
 .erro {
     color: red;
     font-size: 15px;
+    margin:0.5em 0px;
+}
+
+.form-contato {
+  width: 50%;
+  height: 90%;
+  background-color: #efb007;
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato input{
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 20px;
+}
+
+#mensagem {
+  height: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  resize: vertical;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow-y: auto;
+}
+
+.btn {
+  margin: 0 auto;
 }
