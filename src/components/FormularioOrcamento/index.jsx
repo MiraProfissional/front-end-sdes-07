@@ -6,8 +6,8 @@ import { useState } from 'react';
 
 export function FormularioOrcamento() {
   const schema = yup.object({
-    codigoPeca: yup.number().required('o campo Codigo da Peça é obrigatório'),
-    nome: yup.string().required('o campo Nome é obrigatório'),
+    codigoPeca: yup.string().required('O campo Código da Peça é obrigatório'),
+    nome: yup.string().required('O campo Nome é obrigatório'),
     email: yup
       .string()
       .email('Email inválido')
@@ -33,44 +33,44 @@ export function FormularioOrcamento() {
   };
 
   return (
-    <>
+    <div className="container-form-orcamento">
       <form
         className="form-orcamento"
         onSubmit={handleSubmit(submit)}
         noValidate
       >
         <label htmlFor="codigoPeca" placeholder="Código da peça">
-          Código da peça
+          Código da peça:
         </label>
         <input type="text" id="codigoPeca" {...register('codigoPeca')} />
         <p className="erro">{errors.codigoPeca?.message}</p>
         <label htmlFor="nome" placeholder="nome">
-          Nome
+          Nome:
         </label>
         <input type="text" id="nome" {...register('nome')} />
         <p className="erro">{errors.nome?.message}</p>
 
         <label htmlFor="email" placeholder="email">
-          Email
+          Email:
         </label>
         <input type="text" id="email" {...register('email')} />
         <p className="erro">{errors.email?.message}</p>
 
         <label htmlFor="telefone" placeholder="telefone">
-          Telefone
+          Telefone:
         </label>
         <input type="text" id="telefone" {...register('telefone')} />
         <p className="erro">{errors.telefone?.message}</p>
 
         <label htmlFor="observacao" placeholder="observacao">
-          Observação
+          Observação:
         </label>
-        <input type="textarea" id="observacao" {...register('observacao')} />
+        <textarea id="observacao" {...register('observacao')} />
         <p className="erro">{errors.observacao?.message}</p>
 
-        <button>Enviar</button>
+        <button className="btn">Enviar</button>
       </form>
-    </>
+    </div>
   );
 }
 

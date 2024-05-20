@@ -1,0 +1,36 @@
+.container-form-orcamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-orcamento {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.form-orcamento input{
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 20px;
+}
+
+#observacao {
+  height: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  resize: vertical;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow-y: auto;
+}
+
+.erro {
+  color: red;
+  font-size: 15px;
+  margin:0.5em 0px;
+}

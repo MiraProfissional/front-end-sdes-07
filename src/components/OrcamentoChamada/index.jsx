@@ -10,6 +10,7 @@ export function OrcamentoChamada() {
 
   const handleButtonOrcamento = () => {
     setButtonPopUp(true);
+    document.body.style.overflow = 'hidden';
   };
 
   return (
@@ -39,7 +40,11 @@ export function OrcamentoChamada() {
           Fazer orçamento!
         </button>
       </div>
-      <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}>
+      <PopUp
+        trigger={buttonPopUp}
+        titulo={`Orçamento`}
+        setTrigger={setButtonPopUp}
+      >
         <FormularioOrcamento />
       </PopUp>
     </Parallax>
