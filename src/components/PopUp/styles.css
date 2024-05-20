@@ -19,7 +19,7 @@
   max-width: 640px;
   background-color: #efb007;
   border-radius: 5%;
-  max-height: calc(100% - 60px); /* Ajuste conforme necessário */
+  max-height: calc(100% - 60px);
   overflow-y: auto;
 }
 
