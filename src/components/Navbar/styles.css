@@ -36,3 +36,17 @@
 .lista-nav li:hover {
     color: #efb007;
 }
+
+.btn-nav-login {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 15px;
+  background-color: black;
+  border: none;
+}
+
+.btn-nav-login:hover {
+  color: #efb007;
+  cursor: pointer;
+}

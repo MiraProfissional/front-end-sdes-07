@@ -8,8 +8,17 @@ import {
   CiPhone,
   CiShoppingBasket,
 } from 'react-icons/ci';
+import { useState } from 'react';
+import SideBar from '../SideBar';
+import Login from '../Login';
 
 function Navbar() {
+  const [buttonSidebar, setButtonSidebar] = useState(false);
+
+  const handleButtonLogin = () => {
+    setButtonSidebar(true);
+  };
+
   return (
     <nav className="navbar">
       <div className="div-img">
@@ -40,9 +49,16 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/login">
+          <button className="btn-nav-login" onClick={handleButtonLogin}>
             <CiUser /> Login
-          </Link>
+          </button>
+          <SideBar
+            trigger={buttonSidebar}
+            titulo={`Login`}
+            setTrigger={setButtonSidebar}
+          >
+            <Login />
+          </SideBar>
         </li>
       </ul>
     </nav>
