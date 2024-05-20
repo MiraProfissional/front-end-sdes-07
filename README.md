@@ -1,72 +1,90 @@
-[![CI](https://github.com/MiraProfissional/front-end-sdes-07/actions/workflows/node.js.yml/badge.svg)](https://github.com/MiraProfissional/front-end-sdes-07/actions/workflows/node.js.yml)
+# Projeto Museu Trakmaq
 
-# Getting Started with Create React App
+Este projeto é parte da disciplina oferecida pela Universidade Federal de Itajubá, onde os alunos são desafiados a identificar um problema real enfrentado por um cliente e desenvolver uma solução digital para esse problema. Neste caso, o cliente é a empresa Trakmaq, que necessita de uma plataforma digital para aprimorar sua interação com o público e melhorar sua presença online.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
 
-## Available Scripts
+O objetivo do projeto é criar um site moderno e funcional para a Trakmaq. A plataforma digital será um ponto de interação para os visitantes, fornecendo informações sobre as peças as quais comercializam, suas exposições, horários de funcionamento, e permitindo contato direto com a administração da plataforma.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Home**: Landing page da plataforma.
+- **Sobre Nós**: Informações detalhadas sobre a história da Trakmaq, missão, e equipe.
+- **Contato**: Informações de contato e um formulário para que os visitantes possam enviar mensagens diretamente a Trakmaq.
+- **Produtos**: Página semelhante a um e-commerce a qual expõe detalhes sobre as peças de trator (objetos de comercialização da Trakmaq).
+- **Formulário de Orçamento**: Ferramenta para solicitar orçamento das peças de interesse do usuário.
+- **Login**: Área para que a Trakmaq possa se autenticar e acessar sua página de administrador.
+- **Área de Administrador**: Página responsável por realizar as operações de CRUD da plataforma.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Yup**: Biblioteca de validação para JavaScript.
+- **React Router**: Para gerenciamento de rotas na aplicação.
+- **React Icons**: Biblioteca de ícones para React.
+- **Parallax**: Para criar efeitos de rolagem parallax.
+- **CSS**: Para estilização da aplicação.
 
-### `npm test`
+## Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para configurar o ambiente de desenvolvimento, siga os passos abaixo:
 
-### `npm run build`
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/museu-trakmaq.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd museu-trakmaq
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Executando a Aplicação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para iniciar a aplicação em modo de desenvolvimento, execute:
+```bash
+npm start
+```
+A aplicação estará disponível em `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Testes
 
-### `npm run eject`
+Para rodar os testes, utilize o comando:
+```bash
+npm test
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Formatação de Código
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para formatar os arquivos JSX com Prettier, utilize:
+```bash
+npx prettier --write "src/**/*.jsx"
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O backend desse projeto foi desenvolvido em colaboração com Nixon Silva, minha dupla no projeto. O repositório está disponível nesse link: https://github.com/NixonMSilva/back-end-sdes-07
 
-## Learn More
+## Contribuições
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contribuições são bem-vindas! Se você deseja contribuir, por favor siga os passos abaixo:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork o projeto.
+2. Crie uma nova branch (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`).
+4. Push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
 
-### Code Splitting
+## Contato
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Para mais informações ou questões, por favor entre em contato:
 
-### Analyzing the Bundle Size
+- **Email**: jvitor.gmira@gmail.com
+- **Telefone**: (12) 99743-6507
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto foi desenvolvido por alunos da Universidade Federal de Itajubá como parte de um projeto acadêmico. Agradecemos ao Museu Trakmaq por colaborar conosco e proporcionar esta oportunidade de aprendizado prático.
