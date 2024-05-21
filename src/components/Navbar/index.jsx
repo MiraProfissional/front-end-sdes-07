@@ -28,27 +28,27 @@ function Navbar() {
       </div>
 
       <ul className="lista-nav">
-        <li>
+        <li className="itens-lista-navbar">
           <Link to="/">
             <CiHome /> Home
           </Link>
         </li>
-        <li>
+        <li className="itens-lista-navbar">
           <Link to="/">
             <CiShop /> Sobre Nós
           </Link>
         </li>
-        <li>
+        <li className="itens-lista-navbar">
           <Link to="/">
             <CiPhone /> Contato
           </Link>
         </li>
-        <li>
+        <li className="itens-lista-navbar">
           <Link to="/produtos">
             <CiShoppingBasket /> Produtos
           </Link>
         </li>
-        <li>
+        <li className="itens-lista-navbar">
           <button className="btn-nav-login" onClick={handleButtonLogin}>
             <CiUser /> Login
           </button>

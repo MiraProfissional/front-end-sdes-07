@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.lista-nav li {
+.itens-lista-navbar {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -33,7 +33,7 @@
     border-bottom: 3px solid #efb007;
 }
 
-.lista-nav li:hover {
+.itens-lista-navbar:hover {
     color: #efb007;
 }
 

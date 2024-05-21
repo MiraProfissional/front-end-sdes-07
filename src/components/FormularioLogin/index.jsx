@@ -10,7 +10,10 @@ export function FormularioLogin() {
       .string()
       .email('Email inválido')
       .required('O campo Email é obrigatório'),
-    password: yup.string().min(2, 'Campo Senha Obrigatório').required(),
+    password: yup
+      .string()
+      .min(4, 'O campo Senha é obrigatório (mínimo 4 caracteres)')
+      .required(),
   });
 
   const [mensagemErro, setMensagemErro] = useState(' ');
@@ -23,7 +26,8 @@ export function FormularioLogin() {
 
   const { errors } = formState;
 
-  const submit = () => {
+  const submit = (data) => {
+    console.log(data);
     return;
   };
 
@@ -35,16 +39,32 @@ export function FormularioLogin() {
     <>
       <form className="form-login" onSubmit={handleSubmit(submit)} noValidate>
         <label htmlFor="email" placeholder="email">
-          Email
+          Email:
         </label>
-        <input type="text" id="email" {...register('email')} />
-        <p className="erro">{errors.email?.message}</p>
+        <input
+          type="text"
+          id="email"
+          data-cy="login-email"
+          {...register('email')}
+        />
+        <p className="erro" data-cy="login-email-erro">
+          {errors.email ? errors.email.message : ''}
+        </p>
 
-        <label htmlFor="password">Senha</label>
-        <input type="password" id="password" {...register('password')} />
-        <p className="erro">{errors.password?.message}</p>
+        <label htmlFor="password">Senha:</label>
+        <input
+          type="password"
+          id="password"
+          data-cy="login-senha"
+          {...register('password')}
+        />
+        <p className="erro" data-cy="login-senha-erro">
+          {errors.password ? errors.password.message : ''}
+        </p>
 
-        <button>Entrar</button>
+        <button className="btn" data-cy="login-botao">
+          Entrar
+        </button>
       </form>
 
       <p className="server-response">{mensagemErro}</p>
