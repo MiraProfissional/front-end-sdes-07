@@ -8,17 +8,17 @@ describe('FormularioLogin.cy.jsx', () => {
    })
 
   it('should render the component', () => {
-    cy.get('[data-cy=login-email]').should('have.text','')
-    cy.get('[data-cy=login-senha]').should('have.text','')
+    cy.get('[data-cy=login-email]').should('be.empty')
+    cy.get('[data-cy=login-senha]').should('be.empty')
     cy.get('[data-cy=login-botao]').should('have.text','Entrar')
   });
 
 
   it('should check if the inputs are doing the correct validations', () => {
     cy.get('[data-cy=login-email]').type('joao.email@gmail.com')
-    cy.get('[data-cy=login-email-erro]').should('have.text','')
+    cy.get('[data-cy=login-email-erro]').should('be.empty')
     cy.get('[data-cy=login-senha]').type('senha123')
-    cy.get('[data-cy=login-senha-erro]').should('have.text','')
+    cy.get('[data-cy=login-senha-erro]').should('be.empty')
   })
 
   it('should display "Email inválido" message for invalid email', () => {

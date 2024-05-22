@@ -13,9 +13,10 @@ export function FormularioContato() {
       .required('O campo Email é obrigatório'),
     telefone: yup
       .string()
-      .matches(/^\d*$/, 'Telefone deve conter apenas números')
-      .transform((value) => (value ? Number(value) : null))
-      .nullable(),
+      .matches(
+        /\([1-9]{2}\) 9[1-9]\d{3}-\d{4}/,
+        'Formato de telefone inválido. Ex: (XX) 9XXXX-XXXX',
+      ),
     assunto: yup.string().required('O campo Assunto é obrigatório'),
     mensagem: yup.string().required('O campo Mensagem é obrigatório'),
   });
@@ -44,34 +45,75 @@ export function FormularioContato() {
         <label htmlFor="nome" placeholder="nome">
           Nome:
         </label>
-        <input type="text" id="nome" {...register('nome')} />
-        <p className="erro">{errors.nome?.message}</p>
+        <input
+          type="text"
+          id="nome"
+          data-cy="contato-input-nome"
+          placeholder="Digite seu nome..."
+          {...register('nome')}
+        />
+        <p className="erro" data-cy="contato-input-nome-erro">
+          {errors.nome?.message}
+        </p>
 
         <label htmlFor="email" placeholder="email">
           Email:
         </label>
-        <input type="text" id="email" {...register('email')} />
-        <p className="erro">{errors.email?.message}</p>
+        <input
+          type="text"
+          id="email"
+          data-cy="contato-input-email"
+          placeholder="Digite seu email..."
+          {...register('email')}
+        />
+        <p className="erro" data-cy="contato-input-email-erro">
+          {errors.email?.message}
+        </p>
 
         <label htmlFor="telefone" placeholder="telefone">
           Telefone:
         </label>
-        <input type="text" id="telefone" {...register('telefone')} />
-        <p className="erro">{errors.telefone?.message}</p>
+        <input
+          type="text"
+          id="telefone"
+          placeholder="Digite seu telefone: (XX) XXXXXXXX"
+          data-cy="contato-input-telefone"
+          {...register('telefone')}
+        />
+        <p className="erro" data-cy="contato-input-telefone-erro">
+          {errors.telefone?.message}
+        </p>
 
         <label htmlFor="assunto" placeholder="assunto">
           Assunto:
         </label>
-        <input type="text" id="assunto" {...register('assunto')} />
-        <p className="erro">{errors.assunto?.message}</p>
+        <input
+          type="text"
+          id="assunto"
+          data-cy="contato-input-assunto"
+          placeholder="Digite o assunto que se deseja abordar..."
+          {...register('assunto')}
+        />
+        <p className="erro" data-cy="contato-input-assunto-erro">
+          {errors.assunto?.message}
+        </p>
 
         <label htmlFor="mensagem" placeholder="mensagem">
           Mensagem:
         </label>
-        <textarea id="mensagem" {...register('mensagem')} />
-        <p className="erro">{errors.mensagem?.message}</p>
+        <textarea
+          id="mensagem"
+          data-cy="contato-input-mensagem"
+          placeholder="Digite sua mensagem..."
+          {...register('mensagem')}
+        />
+        <p className="erro" data-cy="contato-input-mensagem-erro">
+          {errors.mensagem?.message}
+        </p>
 
-        <button className="btn">Enviar</button>
+        <button className="btn" data-cy="contato-botao">
+          Enviar
+        </button>
       </form>
       <p className="server-response">{mensagemErro}</p>
     </>
