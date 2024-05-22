@@ -1,3 +1,5 @@
+[![CI](https://github.com/MiraProfissional/front-end-sdes-07/actions/workflows/node.js.yml/badge.svg)](https://github.com/MiraProfissional/front-end-sdes-07/actions/workflows/node.js.yml)
+
 # Projeto Museu Trakmaq
 
 Este projeto é parte da disciplina oferecida pela Universidade Federal de Itajubá, onde os alunos são desafiados a identificar um problema real enfrentado por um cliente e desenvolver uma solução digital para esse problema. Neste caso, o cliente é a empresa Trakmaq, que necessita de uma plataforma digital para aprimorar sua interação com o público e melhorar sua presença online.

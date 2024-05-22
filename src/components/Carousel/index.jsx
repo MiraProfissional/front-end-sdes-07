@@ -28,7 +28,9 @@ function Carrousel() {
   return (
     <div className="container-carrousel">
       <div className="slide-title">
-        <h2 className="main-title-black">Trakmaq, sua solução!</h2>
+        <h2 className="main-title-black" data-cy="carou">
+          Trakmaq, sua solução!
+        </h2>
         <p>
           Procurado peças raras para sua máquina? Confira agora mesmo nossos
           produtos
