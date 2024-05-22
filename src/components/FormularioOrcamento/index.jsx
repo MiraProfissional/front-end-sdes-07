@@ -14,9 +14,10 @@ export function FormularioOrcamento() {
       .required('O campo Email é obrigatório'),
     telefone: yup
       .string()
-      .matches(/^\d*$/, 'Telefone deve conter apenas números')
-      .transform((value) => (value ? Number(value) : null))
-      .nullable(),
+      .matches(
+        /\([1-9]{2}\) 9[1-9]\d{3}-\d{4}/,
+        'Formato de telefone inválido. Ex: (XX) 9XXXX-XXXX',
+      ),
     observacao: yup.string(),
   });
 
