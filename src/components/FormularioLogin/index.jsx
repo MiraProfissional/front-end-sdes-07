@@ -10,10 +10,7 @@ export function FormularioLogin() {
       .string()
       .email('Email inválido')
       .required('O campo Email é obrigatório'),
-    password: yup
-      .string()
-      .min(4, 'O campo Senha é obrigatório (mínimo 4 caracteres)')
-      .required(),
+    password: yup.string().min(4, 'O campo Senha é obrigatório').required(),
   });
 
   const [mensagemErro, setMensagemErro] = useState(' ');
