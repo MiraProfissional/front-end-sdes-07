@@ -34,21 +34,21 @@ describe('FormularioLogin.cy.jsx', () => {
 
 });
 
-  it('should display "O campo Senha é obrigatório (mínimo 4 caracteres)" message for empty field', () => {
+  it('should display "O campo Senha é obrigatório" message for empty password', () => {
     cy.get('[data-cy=login-botao]').click();
-    cy.get('[data-cy=login-senha-erro]').contains('O campo Senha é obrigatório (mínimo 4 caracteres)');
+    cy.get('[data-cy=login-senha-erro]').contains('O campo Senha é obrigatório');
   });
 
-  it('should display "O campo Senha é obrigatório (mínimo 4 caracteres)" message for passwords with less then 3 words', () => {
+  it('should display "O campo Senha é obrigatório" message for passwords with less then 3 words', () => {
     cy.get('[data-cy=login-senha]').type('123')
     cy.get('[data-cy=login-botao]').click();
-    cy.get('[data-cy=login-senha-erro]').contains('O campo Senha é obrigatório (mínimo 4 caracteres)');
+    cy.get('[data-cy=login-senha-erro]').contains('O campo Senha é obrigatório');
   });
 
   it('should display errors messages for empty fields', () => {
     cy.get('[data-cy=login-botao]').click();
     cy.get('[data-cy=login-email-erro]').contains('O campo Email é obrigatório');
-    cy.get('[data-cy=login-senha-erro]').contains('O campo Senha é obrigatório (mínimo 4 caracteres)');
+    cy.get('[data-cy=login-senha-erro]').contains('O campo Senha é obrigatório');
   })
 
 });
