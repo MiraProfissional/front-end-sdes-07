@@ -43,6 +43,7 @@ export function FormularioLogin() {
           id="email"
           data-cy="login-email"
           {...register('email')}
+          placeholder="Digite seu email..."
         />
         <p className="erro" data-cy="login-email-erro">
           {errors.email ? errors.email.message : ''}
@@ -53,6 +54,7 @@ export function FormularioLogin() {
           type="password"
           id="password"
           data-cy="login-senha"
+          placeholder="Digite sua senha..."
           {...register('password')}
         />
         <p className="erro" data-cy="login-senha-erro">

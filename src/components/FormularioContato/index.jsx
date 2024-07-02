@@ -76,7 +76,7 @@ export function FormularioContato() {
         <input
           type="text"
           id="telefone"
-          placeholder="Digite seu telefone: (XX) XXXXXXXX"
+          placeholder="Digite seu telefone: (XX) 9XXXX-XXXX"
           data-cy="contato-input-telefone"
           {...register('telefone')}
         />
