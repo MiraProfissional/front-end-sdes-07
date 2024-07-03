@@ -1,0 +1,11 @@
+.paragrafo-esqueci-senha {
+  margin-top: 20px;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.paragrafo-esqueci-senha:hover {
+  color: white;
+  cursor: pointer;
+}
